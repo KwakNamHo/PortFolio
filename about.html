@@ -1,0 +1,70 @@
+<!-- 수정된 about.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo-box">
+        <div class="logo">MY Portfolio</div>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="about.html">MY</a>
+        <a href="secon.html">SECON</a>
+        <a href="team.html">TEAM</a>
+      </nav>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+
+    <div class="card-container">
+      <div class="card" data-index="0">
+        <h3>👤 자기소개</h3>
+        <p>정보보호학과 2학년</p>
+        <p>CERT, 디지털 포랜식</p>
+      </div>
+      <div class="card" data-index="1">
+        <h3>🛠️ GitHub</h3>
+        <p>
+          <a target="_blank" href="https://github.com/KwakNamHo"
+            >GitHub 바로가기</a
+          >
+        </p>
+      </div>
+      <div class="card" data-index="2">
+        <h3>💻 PortFolio</h3>
+        <p>자격증</p>
+        <p>활동 내용</p>
+      </div>
+      <div class="card" data-index="3">
+        <h3>📈 목표</h3>
+        <p>기초 다지기!</p>
+      </div>
+    </div>
+
+    <!-- 모달 창 (슬라이더 포함) -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+
+        <!-- 슬라이더 -->
+        <div class="slider" style="display: none">
+          <span class="arrow left">&#10094;</span>
+          <img id="slider-image" src="" alt="슬라이드 이미지" />
+          <span class="arrow right">&#10095;</span>
+        </div>
+
+        <h2 id="modal-title">제목</h2>
+        <p id="modal-description">설명</p>
+        <a id="modal-link" href="#" target="_blank" style="display: none"
+          >🔗 자세히 보기</a
+        >
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

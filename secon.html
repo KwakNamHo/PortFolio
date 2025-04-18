@@ -1,0 +1,79 @@
+<!-- 수정된 about.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo-box">
+        <div class="logo">MY Portfolio</div>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="about.html">MY</a>
+        <a href="secon.html">SECON</a>
+        <a href="team.html">TEAM</a>
+      </nav>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+
+    <div class="card-container">
+      <div class="card" data-index="0">
+        <h3>☑️ 공지사항</h3>
+        <p>SECON</p>
+      </div>
+      <div class="card" data-index="1">
+        <h3>🌐 전시 품목</h3>
+        <p>
+          영상보안 솔루션,사이버 시큐리티,<br />출입통제 솔루션,스마트도시 보안
+          솔루션 등
+        </p>
+      </div>
+      <div class="card" data-index="2">
+        <h3>📍오시는 길</h3>
+        <p>KINTEX 제1전시장 3-5홀</p>
+      </div>
+      <div class="card" data-index="3">
+        <h3>💁 참관 안내</h3>
+        <p>관람 기간: 2025년 3월 19일(수)~21일(금)</p>
+      </div>
+    </div>
+
+    <!-- 모달 창 (슬라이더 포함) -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+
+        <!-- 슬라이더 -->
+        <div class="slider" style="display: none">
+          <span class="arrow left">&#10094;</span>
+          <img id="slider-image" src="" alt="슬라이드 이미지" />
+          <span class="arrow right">&#10095;</span>
+        </div>
+
+        <h2 id="modal-title">제목</h2>
+        <p id="modal-description">설명</p>
+        <a id="modal-link" href="#" target="_blank" style="display: none"
+          >🔗 자세히 보기</a
+        >
+      </div>
+    </div>
+    <!-- 이미지 클릭 시 전체화면 확대 모달 -->
+    <div id="image-zoom-modal" class="modal" style="display: none">
+      <div class="modal-content" style="max-width: 90%; text-align: center">
+        <span class="close-button" id="close-zoom">&times;</span>
+        <img
+          id="zoomed-image"
+          src=""
+          alt="확대 이미지"
+          style="width: 100%; max-height: 80vh; object-fit: contain"
+        />
+      </div>
+    </div>
+
+    <script src="secon.js"></script>
+  </body>
+</html>
