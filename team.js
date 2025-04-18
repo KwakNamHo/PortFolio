@@ -12,22 +12,22 @@ const rightArrow = document.querySelector(".arrow.right")
 const cardDetails = [
   {
     title: "👤 김태빈",
-    description: "",
+    description: "학번: 92212790",
     link: null,
   },
   {
     title: "👤 이원준",
-    description: ".",
+    description: "학번: 92416140 ",
     link: null,
   },
   {
     title: "👤 김민우",
-    description: " ",
+    description: "학번: 92212752 ",
     link: null,
   },
   {
     title: "👤 곽남호",
-    description: " ",
+    description: "학번: 92212697 ",
     link: null,
   },
 ]
