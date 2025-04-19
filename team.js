@@ -12,22 +12,32 @@ const rightArrow = document.querySelector(".arrow.right")
 const cardDetails = [
   {
     title: "👤 김태빈",
-    description: "학번: 92212790",
-    link: null,
+    description:
+      "학과: 정보보호학과<br>학번: 92212790<br>연락처 : 010-7221-7727",
+    link: "https://github.com/taebin327",
   },
   {
     title: "👤 이원준",
-    description: "학번: 92416140 ",
-    link: null,
+    description:
+      "학과: 정보보호학과<br>학번 : 92416140<br>연락처 : 010-4841-6929",
+    link: "https://github.com/joon-afk",
   },
   {
     title: "👤 김민우",
-    description: "학번: 92212752 ",
-    link: null,
+    description:
+      "학과: 정보보호학과<br>학번 : 92212752<br>연락처 : 010-8700-9404",
+    link: "https://github.com/vmaca123",
   },
   {
     title: "👤 곽남호",
-    description: "학번: 92212697 ",
+    description:
+      "학과: 정보보호학과<br>학번: 92212697<br>연락처 : 010-7454-3904",
+    link: "https://github.com/KwakNamHo",
+  },
+  {
+    title: "Team Project",
+    description:
+      "보안과 암호학의 기초 개념을 알아보고, 다양한 체험과 정보를 제공합니다. ",
     link: null,
   },
 ]
