@@ -70,7 +70,9 @@ body {
     gap: 20px;
     z-index: 1000;
   }
-
+  .nav-links.show {
+    display: flex;
+  }
   .nav-links.active {
     display: flex;
   }
