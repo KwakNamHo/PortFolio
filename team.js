@@ -1,5 +1,7 @@
+// ✅ 모달 설정 함수 가져오기
 import { setupModal } from "./modal.js"
 
+// ✅ 팀원 카드별 정보 입력
 const cardDetails = [
   {
     title: "👤 김태빈",
@@ -32,4 +34,5 @@ const cardDetails = [
     link: "https://team-project-gray-theta.vercel.app/",
   },
 ]
+// ✅ 모달 설정 적용
 setupModal(cardDetails)

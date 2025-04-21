@@ -1,4 +1,6 @@
+// ✅ 모달 작동 설정 함수
 export function setupModal(cardDetails) {
+  // ✅ 모달 요소 가져오기
   const modal = document.getElementById("modal")
   const modalTitle = document.getElementById("modal-title")
   const modalDescription = document.getElementById("modal-description")
@@ -12,7 +14,7 @@ export function setupModal(cardDetails) {
 
   let currentCardIndex = 0
   let currentImageIndex = 0
-
+  // ✅ 카드 클릭 이벤트 등록
   document.querySelectorAll(".card").forEach((card) => {
     card.addEventListener("click", () => {
       currentCardIndex = Number(card.dataset.index)
@@ -40,7 +42,7 @@ export function setupModal(cardDetails) {
       modal.style.display = "block"
     })
   })
-
+  // ✅ 닫기 버튼, 배경 클릭 시 모달 닫기
   closeButton.addEventListener("click", () => {
     modal.style.display = "none"
   })
@@ -50,7 +52,7 @@ export function setupModal(cardDetails) {
       modal.style.display = "none"
     }
   })
-
+  // ✅ 슬라이더 왼쪽/오른쪽 이미지 이동
   leftArrow.addEventListener("click", () => {
     const images = cardDetails[currentCardIndex].images
     if (!images || images.length === 0) return

@@ -1,5 +1,6 @@
+// ✅ 모달 설정 함수 가져오기
 import { setupModal } from "./modal.js"
-
+// ✅ 카드별 상세 설명 및 링크, 이미지 설정
 const cardDetails = [
   {
     title: "",
@@ -26,4 +27,5 @@ const cardDetails = [
     link: "https://www.seconexpo.com/2025/kor/visit/sub01.asp",
   },
 ]
+// ✅ 모달 동작 초기화
 setupModal(cardDetails)

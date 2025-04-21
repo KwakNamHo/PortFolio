@@ -1,5 +1,7 @@
+// ✅ 모달 설정 함수 import
 import { setupModal } from "./modal.js"
 
+// ✅ 카드별 상세 데이터 정의
 const cardDetails = [
   {
     title: "👤 자기소개",
@@ -24,4 +26,5 @@ const cardDetails = [
     link: null,
   },
 ]
+// ✅ 카드 정보 전달하여 모달 동작 설정
 setupModal(cardDetails)
