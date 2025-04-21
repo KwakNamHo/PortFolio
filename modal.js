@@ -68,4 +68,28 @@ export function setupModal(cardDetails) {
     currentImageIndex = (currentImageIndex + 1) % images.length
     sliderImage.src = images[currentImageIndex]
   })
+  // ✅ 확대용 모달 요소 가져오기
+  const zoomModal = document.getElementById("image-zoom-modal")
+  const zoomedImage = document.getElementById("zoomed-image")
+  const closeZoom = document.getElementById("close-zoom")
+
+  // ✅ 슬라이더 이미지 클릭 시 확대 모달 열기
+  sliderImage.addEventListener("click", (e) => {
+    e.stopPropagation() // 📌 클릭 이벤트 버블링 방지 (겹침 방지)
+    if (!sliderImage.src) return
+    zoomedImage.src = sliderImage.src
+    zoomModal.style.display = "block"
+  })
+
+  // ✅ 확대 모달 닫기 버튼
+  closeZoom.addEventListener("click", () => {
+    zoomModal.style.display = "none"
+  })
+
+  // ✅ 확대 모달 외부 클릭 시 닫기
+  zoomModal.addEventListener("click", (e) => {
+    if (e.target === zoomModal) {
+      zoomModal.style.display = "none"
+    }
+  })
 }
